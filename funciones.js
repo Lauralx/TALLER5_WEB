@@ -3,13 +3,15 @@ $(function(){
 });
 
 function calcularEdad() {
-    
+  
+	
     fecha = $(this).val();
     var hoy = new Date();
     var cumpleanos = new Date(fecha);
     var edad = hoy.getFullYear() - cumpleanos.getFullYear();
     var m = hoy.getMonth() - cumpleanos.getMonth();
 
+	
     if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
         edad--;
     }
@@ -17,7 +19,7 @@ function calcularEdad() {
 }
 
 
-//REGISTRO DE USUARIO -----------------------------
+//REGISTRO DEL USUARIO -----------------------------
 
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
