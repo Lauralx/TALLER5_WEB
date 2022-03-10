@@ -12,7 +12,6 @@ function traerDatos(){
         if(this.readyState == 4 && this.status == 200){
 
             let datos = JSON.parse(this.responseText);
-            
 
             let res = document.querySelector('#respuesta');
             res.innerHTML = '';
